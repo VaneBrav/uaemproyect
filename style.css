@@ -1,0 +1,357 @@
+/*tomar un rem equivale a 10px */
+/*-------------------------------------------------------------*/
+                     /** Encabezado **/
+/*-------------------------------------------------------------*/
+
+.contenido1 { /* este contenido puede ser reutilizable - contenido global*/
+    max-width: 1200px; /*maxima anchura*/
+    margin: 0 auto;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    padding-left: 15px;
+    padding-right: 15px;
+    width: auto;
+    text-align: center;
+    flex-direction: row;
+    position:relative;
+    height:100%;
+   /*margin: 0 auto 0 auto; <-- esta linea es la misma que las dos de arriba*/
+}
+
+.texto {
+  text-align: left;
+  position: absolute;
+  bottom:2rem;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;/*<-- esta linea pone un espacio entre elementos aliena los elementos de manera horizontal*/
+    /*justify-content: flex-end;<-- esta linea alinea el contenido en la derecha*/
+    padding-top: 30px; /*separacion de manera interna del contenido*/
+    align-items: center; /*alinea de manera vertical*/
+
+}
+
+.side-header{
+    background-image: url(../img/header.jpg);
+    height: 100vh;
+    min-height: 500px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.menu a {/*pseudo selector (first-of-type hace alusion al primer elemento) (last-of-type hace alusion al ultimo elemento)  */
+    margin: 0;
+    color: white;
+    margin-right: 20px;
+}
+
+/*-------------------------------------------------------------*/
+        /** Estilos de fuente y resaltar Encabezado y pie **/
+/*-------------------------------------------------------------*/
+
+.menu:hover {
+  background-color: green;
+}
+
+.ah1 {
+  color: white;
+  font-family: 'Baloo Bhai', cursive;
+}
+
+.bh1{
+  color: white;
+  font-family: 'Lobster', cursive;
+}
+
+p{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+
+/*-------------------------------------------------------------*/
+                        /** Utilidades **/
+/*-------------------------------------------------------------*/
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+/*-------------------------------------------------------------*/
+                  /** Seccion Sobre Nosotros **/
+/*-------------------------------------------------------------*/
+
+.iconos-nosotros{
+    display: flex;
+    justify-content:space-between;
+    line-height: 2rem;
+}
+
+.icono {
+  text-align:center;
+  flex-basis: calc( 33.3% - 1rem ); /* El ancho va a ser de 33.3% menos un mergen de 1 rem*/
+
+}
+
+.icono h3 {
+    text-transform:uppercase;
+}
+
+.encabezado.nosotros {
+      Font-weight:300;
+      Text-aling:center;
+}
+
+/*-------------------------------------------------------------*/
+         /** Seccion Casas y depas en venta **/
+/*-------------------------------------------------------------*/
+
+.sec2{
+  display: flex; /*automaticamente todos lo elementos contenidos en este elemento se convierten en flex*/
+  justify-content: center; /*Los elementos - flex están alineados al centro del contenedor*/
+  height: 100%; /*37.5rem;600px*/
+  margin-top: 1.875rem;/*30px*/
+  line-height: 160%;
+
+}
+
+.anuncio{
+  border: 2px solid #aeaeae;
+  flex-basis: calc( 33.3% - 1rem ); /* El ancho va a ser de 33.3% menos un mergen de 1 rem*/
+  margin: 0.3125rem;/* 5px  */
+  background: #e5e4e4;
+}
+
+
+.anuncio p {
+  text-align: left;
+  padding: 0 1.5625rem 0 1.5625rem ;/*25px*/
+}
+
+.imgAnuncio{
+  width: 100%;
+  height: 45%;
+  min-height: 15.625rem;/* 250px  */
+}
+
+.iconAnuncio{
+  width: 2.1875rem;/* 35px  */
+  height: 2.1875rem; /* 35px  */
+  padding: 0 1.125rem 0 1.125rem ;/*18px*/
+}
+
+.boton1{
+  margin: auto;
+  width: 90%;
+  height: 2.3125rem; /* 37px  */
+  background: #ff9700;
+  font-family: Arial black;
+  color: white;
+}
+
+.boton2{
+  margin-bottom: 0.9375rem; /* 15px  */
+  float: right;
+  width: 9.375rem; /* 150px  */
+  height: 2.8125rem; /* 45px  */
+  background: #71c907;
+  font-family: Arial black;
+  color: white;
+}
+
+.precio{
+  color: green;
+}
+
+/*-------------------------------------------------------------*/
+         /** Main seccion principal **/
+/*-------------------------------------------------------------*/
+.principal{
+  margin-top: 25px;
+  background-image: url(../img/encuentra.jpg);
+  height: 70vh;/*height: 330px;*/
+  background-position: center center;
+  background-size: cover;
+  color: white;
+}
+
+.textoMain{
+  padding: 60px 0 0 200px;
+}
+
+.boton3{
+  margin-left: 200px;
+  width: 160px;
+  height: 37px;
+  background: #ff9700;
+  font-family: Arial black;
+  color: white;
+}
+
+
+/*-------------------------------------------------------------*/
+                    /** Seccion BLOG **/
+/*-------------------------------------------------------------*/
+
+/*.sector{ esta clase une la parte de seccion y la de testimoniales
+  height: 600px;
+  display: flex;
+  background-color: blue;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.seccionblog{
+  margin: 25px;
+  width: 50%;
+  max-height: 590px;
+  line-height: 160%;
+}*/
+.marginsec2{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.seccionblog-test{
+  display: flex;
+  flex-basis: calc( 50% - 1rem );
+  max-height: 600px;
+  justify-content: space-between;
+}
+
+.textbt{
+  display: flex;
+}
+
+.blog{
+  height: 50%;
+  width: 660px;
+  /*height: 200px;*/
+  float: right;
+}
+
+.blog img{
+  float: left;
+  margin-right: 25px;
+}
+
+.blog h3{
+  text-align: justify;
+}
+
+.blog p {
+  margin: 15px 15px;
+  text-align: justify;
+  font-size: 13px;
+}
+
+.vinculo{
+  color:orange;
+}
+
+.vinculoB {
+  color: black;
+}
+
+hr {
+  height: 5px;
+  width: 150px;
+  margin-top: 15px;
+  margin-right: 50%;
+  background-color: #71c907;
+}
+
+.imgBlog{
+  width: 45%;
+  height: 90%;
+  /*width: 15.625rem;
+  height: 12.5rem;*/
+}
+
+/*-------------------------------------------------------------*/
+                    /** Seccion TESTIMONIALES **/
+/*-------------------------------------------------------------*/
+
+
+.tituloblog-testimonial{
+  flex-basis: calc( 50% - 1rem );
+  position: relative;
+}
+
+.blockquote{
+  margin-top: 25px;
+  width: 80%;
+  height: 346px;
+  background-color: #71c907;
+  border-radius: 20px;/*para redondear el borde del cuadro*/
+  color:white;
+  font-size: 120%;
+}
+
+.blockquote p{
+  padding: 45px 45px 20px 105px;
+  text-align: left;
+}
+
+.blockquote:before{
+  padding: 25px;
+  float:left;
+  content: '“';
+  margin-top: 70px;
+  font-size: 90px;
+  font-family:Arial black;
+  color: white;
+}
+
+.blockquote cite{
+  padding: 0px 15px 0px 35px;
+  float: right;
+}
+
+/*-------------------------------------------------------------*/
+                      /**  FOOTER  **/
+/*-------------------------------------------------------------*/
+
+.pie{
+  /*margin: auto;*/
+  margin-top: 15px;
+  padding-top: 15px;
+  height: 55px;
+  background-color: #2c2c2c;
+}
+
+.pie p{
+  float: right;
+  color: white;
+  margin-right: 120px;
+}
+
+.menupie{
+  float: left;
+  margin-left: 120px;
+  padding-top: 15px;
+  font-size: 15px;
+}
+
+.menupie a {
+  color: white;
+  padding: 10px;
+}
